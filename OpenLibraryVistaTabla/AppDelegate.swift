@@ -5,7 +5,7 @@
 //  Created by Jose Luis Garcia Dueñas on 4/2/16.
 //  Copyright © 2016 Jose Luis Garcia Dueñas. All rights reserved.
 //
-
+ 
 import UIKit
 import CoreData
 
@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

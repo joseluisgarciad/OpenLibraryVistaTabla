@@ -38,9 +38,10 @@ class VistaDetalle: UIViewController {
         } else {
             mensaje("Error al mostrar datos")
         }
-
+ 
     }
 
+    
 
     func MostrarDatos() -> Bool {
         Titulo.text = TituloArr
@@ -48,7 +49,7 @@ class VistaDetalle: UIViewController {
         ImagenPortada.image = nil
         ImagenPortada.imageFromUrl("")
         ImagenPortada.imageFromUrl(ImagenArr)
-        print("mostrarDatos en VistaDetalle desde Tabla: \(TituloArr) \(AutorArr) \(ImagenArr)")
+//        print("mostrarDatos en VistaDetalle desde Tabla: \(TituloArr) \(AutorArr) \(ImagenArr)")
         return true
     }
     

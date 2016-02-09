@@ -89,27 +89,7 @@ class VistaTablaSeleccion: UITableViewController {
 
 
     
-//    func buscaTitulo(Titulo:String) -> String {
-//        var resultado: String = ""
-//        var indInt: Int = 0
-//        for indice in ArrayLibros {
-//            if ArrayLibros[indInt][1] == Titulo {
-//                ISBNArr = ArrayLibros[indInt][0]
-//                TextoISBN = ISBNArr
-//                resultado = ArrayLibros[indInt][1]
-//                TituloArr = resultado
-//                AutorArr =  ArrayLibros[indInt][2]
-//                if ArrayLibros[indInt][3] == "" {
-//                } else {
-//                  ImagenArr = ArrayLibros[indInt][3]
-//                }
-//                print(indice)
-//            }
-//            indInt++
-//        }
-//      //self.tableView.indexPathForSelectedRow
-//      return resultado
-//    }
+
     
 
     /*

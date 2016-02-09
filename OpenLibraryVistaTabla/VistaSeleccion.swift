@@ -62,8 +62,8 @@ class VistaSeleccion: UIViewController, UITextFieldDelegate {
     @IBAction func CajaTextoISBN(sender: AnyObject) {
         CodigoISBN = TextoISBN.text!
         if recuperarJSON() == false {
-            print("falso")
-            //navigationController?.popToRootViewControllerAnimated(true)
+            //print("falso")
+
             mensaje("No existe el ISBN indicado", viewController: self)
         } else {
 
@@ -98,7 +98,7 @@ class VistaSeleccion: UIViewController, UITextFieldDelegate {
                     let cover = dico2["cover"]
                     if cover != nil && cover is NSDictionary {
                         let covers = dico2["cover"] as!NSDictionary
-                        //ImagenPortada.imageFromUrl(covers["medium"] as! NSString as String)
+
                         ImagenArr = (covers["medium"] as! NSString as String)
                     }
                 }
