@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "VistaSeleccion.recuperarJSON() -&gt; Bool:VistaSeleccion.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+            <PersistentString
+               value = "Autores">
+            </PersistentString>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaTablaSeleccion.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():VistaTablaSeleccion.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+            <PersistentString
+               value = "indice">
+            </PersistentString>
+            <PersistentString
+               value = "TextoISBN">
+            </PersistentString>
+            <PersistentString
+               value = "sigVista.TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "AutorArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaDetalle.MostrarDatos() -&gt; Bool:VistaDetalle.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "AutorArr">
+            </PersistentString>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaTablaSeleccion.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():VistaTablaSeleccion.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+            <PersistentString
+               value = "TextoISBN">
+            </PersistentString>
+            <PersistentString
+               value = "AutorArr">
+            </PersistentString>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "ISBNArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaSeleccion.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():VistaSeleccion.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "AutorArr">
+            </PersistentString>
+            <PersistentString
+               value = "ISBNArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaSeleccion.CajaTextoISBN(AnyObject) -&gt; ():VistaSeleccion.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AutorArr">
+            </PersistentString>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "ISBNArr">
+            </PersistentString>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaDetalle.viewDidLoad() -&gt; ():VistaDetalle.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ArrayLibros">
+            </PersistentString>
+            <PersistentString
+               value = "Libros">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaDetalle.init(coder : NSCoder) -&gt; VistaDetalle?:VistaDetalle.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AutorArr">
+            </PersistentString>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "ISBNArr">
+            </PersistentString>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VistaTablaSeleccion.buscaTitulo(String) -&gt; String:VistaTablaSeleccion.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ImagenArr">
+            </PersistentString>
+            <PersistentString
+               value = "TituloArr">
+            </PersistentString>
+            <PersistentString
+               value = "ISBNArr">
+            </PersistentString>
+            <PersistentString
+               value = "AutorArr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
