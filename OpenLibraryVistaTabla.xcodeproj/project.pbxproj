@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8BBA55E01C6394BA00A5B957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55DF1C6394BA00A5B957 /* AppDelegate.swift */; };
-		8BBA55E21C6394BA00A5B957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55E11C6394BA00A5B957 /* ViewController.swift */; };
 		8BBA55E51C6394BA00A5B957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA55E31C6394BA00A5B957 /* Main.storyboard */; };
 		8BBA55E81C6394BA00A5B957 /* OpenLibraryVistaTabla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55E61C6394BA00A5B957 /* OpenLibraryVistaTabla.xcdatamodeld */; };
 		8BBA55EA1C6394BA00A5B957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA55E91C6394BA00A5B957 /* Assets.xcassets */; };
 		8BBA55ED1C6394BA00A5B957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA55EB1C6394BA00A5B957 /* LaunchScreen.storyboard */; };
+		8BBA55F51C6396E200A5B957 /* VistaTablaSeleccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55F41C6396E200A5B957 /* VistaTablaSeleccion.swift */; };
+		8BBA55F71C6398A000A5B957 /* VistaDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55F61C6398A000A5B957 /* VistaDetalle.swift */; };
+		8BBA55FB1C63BBFF00A5B957 /* VistaSeleccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55FA1C63BBFF00A5B957 /* VistaSeleccion.swift */; };
+		8BBA55FD1C63EB6000A5B957 /* arrLibros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55FC1C63EB6000A5B957 /* arrLibros.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8BBA55DC1C6394BA00A5B957 /* OpenLibraryVistaTabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibraryVistaTabla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBA55DF1C6394BA00A5B957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BBA55E11C6394BA00A5B957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BBA55E41C6394BA00A5B957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BBA55E71C6394BA00A5B957 /* OpenLibraryVistaTabla.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenLibraryVistaTabla.xcdatamodel; sourceTree = "<group>"; };
 		8BBA55E91C6394BA00A5B957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BBA55EC1C6394BA00A5B957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BBA55EE1C6394BA00A5B957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBA55F41C6396E200A5B957 /* VistaTablaSeleccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaTablaSeleccion.swift; sourceTree = "<group>"; };
+		8BBA55F61C6398A000A5B957 /* VistaDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaDetalle.swift; sourceTree = "<group>"; };
+		8BBA55FA1C63BBFF00A5B957 /* VistaSeleccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaSeleccion.swift; sourceTree = "<group>"; };
+		8BBA55FC1C63EB6000A5B957 /* arrLibros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = arrLibros.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				8BBA55DF1C6394BA00A5B957 /* AppDelegate.swift */,
-				8BBA55E11C6394BA00A5B957 /* ViewController.swift */,
 				8BBA55E31C6394BA00A5B957 /* Main.storyboard */,
 				8BBA55E91C6394BA00A5B957 /* Assets.xcassets */,
 				8BBA55EB1C6394BA00A5B957 /* LaunchScreen.storyboard */,
 				8BBA55EE1C6394BA00A5B957 /* Info.plist */,
 				8BBA55E61C6394BA00A5B957 /* OpenLibraryVistaTabla.xcdatamodeld */,
+				8BBA55F41C6396E200A5B957 /* VistaTablaSeleccion.swift */,
+				8BBA55F61C6398A000A5B957 /* VistaDetalle.swift */,
+				8BBA55FA1C63BBFF00A5B957 /* VistaSeleccion.swift */,
+				8BBA55FC1C63EB6000A5B957 /* arrLibros.swift */,
 			);
 			path = OpenLibraryVistaTabla;
 			sourceTree = "<group>";
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBA55FB1C63BBFF00A5B957 /* VistaSeleccion.swift in Sources */,
 				8BBA55E81C6394BA00A5B957 /* OpenLibraryVistaTabla.xcdatamodeld in Sources */,
-				8BBA55E21C6394BA00A5B957 /* ViewController.swift in Sources */,
 				8BBA55E01C6394BA00A5B957 /* AppDelegate.swift in Sources */,
+				8BBA55F51C6396E200A5B957 /* VistaTablaSeleccion.swift in Sources */,
+				8BBA55FD1C63EB6000A5B957 /* arrLibros.swift in Sources */,
+				8BBA55F71C6398A000A5B957 /* VistaDetalle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +303,7 @@
 				8BBA55F31C6394BA00A5B957 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
