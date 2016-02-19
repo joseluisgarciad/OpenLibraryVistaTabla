@@ -8,20 +8,6 @@
 
 import UIKit
 
-extension UIImageView {
-    public func imageFromUrl(urlString: String) {
-        NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: urlString)!) { (data, response, error) in
-            dispatch_async(dispatch_get_main_queue()) {
-                self.contentMode = UIViewContentMode.ScaleAspectFill
-                if data == nil {
-                    
-                } else {
-                    self.image = UIImage(data: data!)
-                }
-            }
-            }.resume()
-    }
-}
 
 class VistaDetalle: UIViewController {
     
@@ -29,10 +15,11 @@ class VistaDetalle: UIViewController {
     var TituloArr: String = ""
     var AutorArr: String = ""
     var ImagenArr: String = ""
-
+    var PortadaImg:UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if MostrarDatos() == true {
             
         } else {
@@ -47,8 +34,9 @@ class VistaDetalle: UIViewController {
         Titulo.text = TituloArr
         Autores.text = AutorArr
         ImagenPortada.image = nil
-        ImagenPortada.imageFromUrl("")
-        ImagenPortada.imageFromUrl(ImagenArr)
+        ImagenPortada.image = PortadaImg
+        //        ImagenPortada.imageFromUrl("")
+//        ImagenPortada.imageFromUrl(ImagenArr)
 //        print("mostrarDatos en VistaDetalle desde Tabla: \(TituloArr) \(AutorArr) \(ImagenArr)")
         return true
     }

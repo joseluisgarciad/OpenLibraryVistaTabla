@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B6A9B581C77311700DEA297 /* noimagen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B6A9B571C77311700DEA297 /* noimagen.jpg */; };
 		8BBA55E01C6394BA00A5B957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55DF1C6394BA00A5B957 /* AppDelegate.swift */; };
 		8BBA55E51C6394BA00A5B957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA55E31C6394BA00A5B957 /* Main.storyboard */; };
 		8BBA55E81C6394BA00A5B957 /* OpenLibraryVistaTabla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA55E61C6394BA00A5B957 /* OpenLibraryVistaTabla.xcdatamodeld */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B6A9B571C77311700DEA297 /* noimagen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noimagen.jpg; sourceTree = "<group>"; };
 		8BBA55DC1C6394BA00A5B957 /* OpenLibraryVistaTabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibraryVistaTabla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBA55DF1C6394BA00A5B957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BBA55E41C6394BA00A5B957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				8BBA55F61C6398A000A5B957 /* VistaDetalle.swift */,
 				8BBA55FA1C63BBFF00A5B957 /* VistaSeleccion.swift */,
 				8BBA55FC1C63EB6000A5B957 /* arrLibros.swift */,
+				8B6A9B571C77311700DEA297 /* noimagen.jpg */,
 			);
 			path = OpenLibraryVistaTabla;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BBA55ED1C6394BA00A5B957 /* LaunchScreen.storyboard in Resources */,
+				8B6A9B581C77311700DEA297 /* noimagen.jpg in Resources */,
 				8BBA55EA1C6394BA00A5B957 /* Assets.xcassets in Resources */,
 				8BBA55E51C6394BA00A5B957 /* Main.storyboard in Resources */,
 			);

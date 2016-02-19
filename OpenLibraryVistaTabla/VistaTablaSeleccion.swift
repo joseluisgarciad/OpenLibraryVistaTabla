@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreData // Imprescindible para Core Data importar su biblioteca
+
+
 
 class VistaTablaSeleccion: UITableViewController {
     var TextoISBN: String = ""
@@ -15,9 +18,62 @@ class VistaTablaSeleccion: UITableViewController {
     var TituloArr: String = ""
     var AutorArr: String = ""
     var ImagenArr: String = ""
+    var portada: UIImage!
+    
+    //var structLibros:[ISBNModelo] = []
+    var contexto: NSManagedObjectContext? = nil  //  Core Data - variable contexto que nos permite acceder a la pila de CoreData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // ====================
+        //  Core Data - SE RECUPERAN LOS DATOS DE LAS ENTIDADES GUARDADAS
+        //  Core Data - Se le da valor a contexto
+        self.contexto = (UIApplication.sharedApplication().delegate as!AppDelegate).managedObjectContext
+        //  Core Data - Declaración de la Entidad "Libro"
+        let seccionEntidad = NSEntityDescription.entityForName("Libro", inManagedObjectContext: self.contexto!)
+        //  Core Data - Delaración de la busqueda (fetch) de todas las Secciones
+        let peticion = seccionEntidad?.managedObjectModel.fetchRequestTemplateForName("petISBNs")
+ 
+        do {
+            //  Core Data - Ejecución del fetch de busqueda de todas las secciones
+            let seccionesEntidad = try self.contexto?.executeFetchRequest(peticion!)
+            //  Core Data - Se recorren todas las secciones
+            for seccionEntidad2 in seccionesEntidad! {
+                //  Core Data - Recuperamos la Entidad "Libro"
+                let isbn = seccionEntidad2.valueForKey("isbn") as! String
+                let titulo = seccionEntidad2.valueForKey("titulo") as! String
+                
+                if seccionEntidad2.valueForKey("portada") == nil {
+                   
+                } else {
+                   portada = UIImage(data: seccionEntidad2.valueForKey("portada") as! NSData)
+                }
+                
+                
+                //  Core Data - Recuperamos la key de relacion "tiene" para así acceder a los autores asociados (conjunto de objetos)
+                let autoresEntidad = seccionEntidad2.valueForKey("tiene") as! Set<NSObject>
+                //   Core Data - Como las imagenes las guardamos como datos hay que volver a convertirlas a imagen
+                // Se crea un array de autores
+                var autores = [String]()
+                //  Core Data - Se recorren todas las Entidades "Autor" mediante su "nombre"
+                for autoresEntidad2 in autoresEntidad {
+                    //  Core Data - Se guardan los datos de la imagen en "contenido" como imagen en la variable "img"
+                    let autor = autoresEntidad2.valueForKey("nombre") as! String
+                    AutorArr = AutorArr + autor + "\n"
+                    //  Core Data - Se añade la imagen al array de imagenes
+                    autores.append(autor)
+                }
+                
+                //  Core Data - Se añade al array las Entidades recuperadas
+
+                let isbnM = ISBNModelo(isbn: isbn, nombre: titulo, autores:autores  , imagen: portada)
+                structLibros.append(isbnM)
+
+            }
+        } catch {
+            
+        }
+        //================
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,13 +96,15 @@ class VistaTablaSeleccion: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ArrayLibros.count
+        //return ArrayLibros.count
+        return structLibros.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-            cell.textLabel?.text = ArrayLibros[indexPath.row][1]
+//            cell.textLabel?.text = ArrayLibros[indexPath.row][1]
+            cell.textLabel?.text = structLibros[indexPath.row].nombre
         
         // Configure the cell...
        return cell
@@ -79,10 +137,15 @@ class VistaTablaSeleccion: UITableViewController {
            let sigVista=segue.destinationViewController as! VistaDetalle
             
             let indice = self.tableView.indexPathForSelectedRow
-            sigVista.ISBNArr = ArrayLibros[indice!.item][0]
-            sigVista.TituloArr = ArrayLibros[indice!.item][1]
-            sigVista.AutorArr = ArrayLibros[indice!.item][2]
-            sigVista.ImagenArr = ArrayLibros[indice!.item][3]
+//            sigVista.ISBNArr = ArrayLibros[indice!.item][0]
+//            sigVista.TituloArr = ArrayLibros[indice!.item][1]
+//            sigVista.AutorArr = ArrayLibros[indice!.item][2]
+//            sigVista.ImagenArr = ArrayLibros[indice!.item][3]
+            sigVista.ISBNArr = structLibros[indice!.item].isbn
+            sigVista.TituloArr = structLibros[indice!.item].nombre
+            sigVista.AutorArr = structLibros[indice!.item].autores.joinWithSeparator(",")
+            sigVista.PortadaImg = structLibros[indice!.item].imagen
+           
         }
                     
     }
